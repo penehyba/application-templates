@@ -505,22 +505,7 @@
             "uri": "${SOURCE_REPOSITORY_URL}",
             "ref": "${SOURCE_REPOSITORY_REF}"
           },
-          "contextDir": "${CONTEXT_DIR}",
-          "images": [
-            {
-              "from": {
-                "kind": "ImageStreamTag",
-                "namespace": "${EXTENSIONS_IMAGE_NAMESPACE}",
-                "name": "${EXTENSIONS_IMAGE}"
-              },
-              "paths": [
-                {
-                  "destinationDir": "./${CONTEXT_DIR}/extensions/extras",
-                  "sourcePath": "${EXTENSIONS_INSTALL_DIR}/."
-                }
-              ]
-            }
-          ]
+          "contextDir": "${CONTEXT_DIR}"
         },
         "strategy": {
           "type": "Source",
